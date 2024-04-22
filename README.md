@@ -96,6 +96,31 @@ Apr 21 23:04:08 localhost postfix/pipe[19903]: 9DD90182EE3: to=<aaa@ugurcomptech
 ```
 
 
+İsterseniz de sunucu üzerinden log bakabilirsiniz.
+
+İlk öncelikle sunucumuzda `cd /var/log/` konumuna gidiyoruz. Burada incelememiz gereken dosya `mail.log` dosyasıdır. Örneğin bir mailin gidip gitmediğini kontrol edeceksiniz. Aşağıdaki komutu yazarak kontrol sağlayabilirsiniz.
+
+```
+cat mail.log | grep test@test.com
+```
+
+
+## FTP 
+
+FTP hesabı oluşturmak için sol tarafta bulunan panel üzerinden FTP >> FTP Hesabı Oluştur sekmesinden başarılı bir şekilde oluşturabilirsiniz.
+
+![image](https://github.com/ugurcomptech/Ubuntu-Cyberpanel/assets/133202238/28e53a9b-00a0-4d4c-8feb-80b3fbb274b0)
+
+
+FileZilla üzerinden bağlanmak için üst tarafta bulunan File >> Site Manager sekmesinden yeni bir site ekleyip ayarları aşağıdaki gibi yapınız.
+
+![image](https://github.com/ugurcomptech/Ubuntu-Cyberpanel/assets/133202238/8cf7af9d-db4e-45dc-bc04-72bc97a50b50)
+
+Ayarları yaptıktan sonra `Connect` deyip bağlanabilirsiniz.
+
+
+
+
 
 Cyberpanel üzerinde bir sürü özel ayar bulunmakta. Bu yazımızda sadece temel olarak anlatımıştır. Çok yakında daha detaylı anlatılmaya devam edecektir.
 
