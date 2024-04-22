@@ -119,6 +119,61 @@ FileZilla üzerinden bağlanmak için üst tarafta bulunan File >> Site Manager 
 Ayarları yaptıktan sonra `Connect` deyip bağlanabilirsiniz.
 
 
+## User Ve Paket Ayarları
+
+
+Sol tarafta bulunan Paketler >> Paket oluştur sekmesinden paket oluşturabilirsiniz. Bu sekmede kısıtlamalar koyabilir ve istediğiniz ayarı yapabilirsiniz.
+
+
+![image](https://github.com/ugurcomptech/Ubuntu-Cyberpanel/assets/133202238/7b24d58a-68f7-4240-8d00-b3e21e81023a)
+
+
+Sol tarafta bulunan Kullanıcılar >> Kulanıcı oluştur sekmesinden yeni bir kullanıcı oluşturabilirsiniz. Bu sekme üzerinde oluşturmuş olduğunuz kullanının bilgilerini giriyorsunuz. Select ACL kısmından kullanıcımıza vereceğimiz yetkileri seçiyoruz. Siz eğer önceden  ACL oluşturmadıysanız burası boş gelecektir. Sol tarafta bulunan Kullanıcılar >> Create New ACL sekmesidnen yeni bir ACL oluşturabilirsiniz.
+
+Bu sekmeden istediğiniz yetkileri verebilirsiniz. Ben normal bir müşteride olması gereken yetkileri veriyorum. 
+
+![image](https://github.com/ugurcomptech/Ubuntu-Cyberpanel/assets/133202238/b1a4febe-b32a-432a-bc27-c9f27c8b7680)
+
+
+
+Tekrardan Kullanıcı oluştur sekmesine gelip oluşturacağımız kullanıcımızı oluşturuyoruz.
+
+
+![image](https://github.com/ugurcomptech/Ubuntu-Cyberpanel/assets/133202238/7cae19f8-6e7d-4841-8805-0c3aa9e927d0)
+
+
+Şimdi bu kullanıcım için bir web sitesi oluşturacağız. Sol tarafta bulunan panelde Websiteler >> Websitesi oluştur sekmesinden yeni bir site oluşturacağız. 
+
+Önceki adımlarda yapmış olduğumuz işlemleri burada kullandık. Sahip olarak oluşturmuş olduğumuz `catal` kullanıcısını ve paket olarak `admin_user` paketini seçtik. Web sitesini oluştur diyoruz.
+
+![image](https://github.com/ugurcomptech/Ubuntu-Cyberpanel/assets/133202238/ff538e1a-5587-499f-a17c-a6f5f270441f)
+
+
+Web sitemiz başarılı bir şekilde oluşturuldu.
+
+![image](https://github.com/ugurcomptech/Ubuntu-Cyberpanel/assets/133202238/f0e27614-bfc4-4a17-8481-d4d77f16ab03)
+
+
+Şimdi oluşturmuş olduğumuz Userın hesabına giriş yapıyoruz.
+
+
+![image](https://github.com/ugurcomptech/Ubuntu-Cyberpanel/assets/133202238/aac75229-3e76-4e68-82c8-7e4bcd1256cc)
+
+
+
+Görmüş olduğunuz gibi web sitemiz `catal` hesabında başarılı bir şekilde oluşturulmuştur. Sizlerin paketine vermiş olduğu limit kadar kullanabilmektedir. Örneğin ben bir tane FTP hesabı açma hakkı vermiştim eğer iki tane açarsa hata verecektir. Hadi bunu test edelim:
+
+Başarılı bir şekilde oluşturabildim. Şimdi ikinci FTP hesabını açmayı deneyelim.
+
+![image](https://github.com/ugurcomptech/Ubuntu-Cyberpanel/assets/133202238/462803e8-eb0d-452b-92b1-0b9eb24500f4)
+
+
+Görmüş olduğunuz gibi 'Paket için izin verilen maksimum FTP hesabı miktarı aşıldı.' hatası verdi.
+
+![image](https://github.com/ugurcomptech/Ubuntu-Cyberpanel/assets/133202238/9b8faca7-0528-4485-8174-c31c98b32c8f)
+
+
+
 
 
 
