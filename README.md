@@ -179,6 +179,19 @@ Görmüş olduğunuz gibi 'Paket için izin verilen maksimum FTP hesabı miktar�
 CyberPanelin Login ekranı <IP_Adresi:8090> veya Snappy Mailin login ekranı bildiğiniz gibi <IP_Adresi:8090/snappymail> adresi ile gelir. Bunları domain ile yayınlamak isteyebilirsiniz. Bunun için ilk öncelikle bir domain veya subdomain oluşturmanız gerekmektedir.
 İlgili domaini/subdomaini oluşturduktan sonra Yönet >>  Rewrite Rules seçeneğini seçip aşağıdaki kuralı girmeniz gerekmektedir.
 
+**NOT:** DNS bölgenize gerekli kayıtları girmeyi unutmayınız!
+
+```
+
+webmail  IN A  1.1.1.1 # sunucu ıp adresi
+
+
+panel  IN  A  1.1.1.1 # sunucu ıp adresi
+
+
+```
+
+
 ```
 RewriteEngine On
 RewriteCond %{HTTPS}  !=on
