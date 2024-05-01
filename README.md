@@ -182,13 +182,9 @@ CyberPanelin Login ekranı <IP_Adresi:8090> veya Snappy Mailin login ekranı bil
 **NOT:** DNS bölgenize gerekli kayıtları girmeyi unutmayınız!
 
 ```
-
 webmail  IN A  1.1.1.1 # sunucu ıp adresi
 
-
 panel  IN  A  1.1.1.1 # sunucu ıp adresi
-
-
 ```
 
 
