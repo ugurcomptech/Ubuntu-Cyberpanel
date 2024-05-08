@@ -212,6 +212,33 @@ RewriteCond %{QUERY_STRING} ^$
 RewriteRule ^$ https://serverdomain.com:8090/ [R=301,L,NC]
 ```
 
+## Mail Kurulumu Yaparken Yaşanan Sorunlar
+
+Selamlar, öncelikle sunucunuzdaki mail hesaplarınızdan birisini outlook veya başka bir benzeri uygulamaya kurmaya çalıştığınızda hatalar alacaksınızdır. Örnek hata aşağıdaki gibidir.
+
+```
+27 22:49:24 localhost dovecot: imap-login: Disconnected: Connection closed (no auth attempts in 0 secs): user=<>, rip=78.190.164.48, lip=193.106.196.59, session=<QFLy1BsXvUFOvqQw>
+Apr 27 22:49:24 localhost postfix/submission/smtpd[192196]: warning: hostname 78.190.164.48.static.ttnet.com.tr does not resolve to address 78.190.164.48: Name or service not known
+Apr 27 22:49:24 localhost postfix/submission/smtpd[192196]: connect from unknown[78.190.164.48]
+Apr 27 22:49:24 localhost postfix/submission/smtpd[192196]: lost connection after EHLO from unknown[78.190.164.48]
+Apr 27 22:49:24 localhost postfix/submission/smtpd[192196]: disconnect from unknown[78.190.164.48] ehlo=1 mail=0/1 commands=1/2
+```
+
+E-posta sunucusu yöneticileri, zaman zaman e-posta sunucularına gelen bağlantıları izlerken "hostname does not resolve" (alan adı çözünemiyor) hatası ile karşılaşabilirler. Bu hata, gelen bağlantının IP adresi ile ilişkilendirilmiş bir alan adının olmamasından kaynaklanır. Bu durum, e-posta sunucusunun güvenlik politikaları nedeniyle bağlantıyı reddetmesine neden olabilir.
+
+Bu hatanın çözümü, PTR (Reverse DNS) kaydının oluşturulması veya doğru şekilde yapılandırılmasıyla mümkündür. PTR kaydı, bir IP adresinin alan adı ile eşleşmesini sağlar. E-posta sunucuları, gelen bağlantıların güvenilirliğini doğrulamak için PTR kaydını kontrol eder. Sunucunuz için erişmiş olduğunuz IP adresinin sahibi hangi ISP firması ise orayla iletişime geçmeniz gerekmektedir. https://search.arin.net/rdap/ Web sitesinden IP adreslerin sahiplerini görebilirsiniz.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
