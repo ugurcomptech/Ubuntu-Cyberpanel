@@ -231,11 +231,53 @@ Bu hatanın çözümü, PTR (Reverse DNS) kaydının oluşturulması veya doğru
 
 
 
+## Mail Adresi Outlook'a Nasıl Kurulu?
+
+Kurulumları herhangi bir mail uygulamasında POP veya IMAP şeklinde test edebilirsiniz. Ben SSL portlarını kullanarak bir kurulum yapacağım.
+
+Gerekli yerleri dolduruyoruz. Gelen ve Giden posta sunucusuna sizler ait olan **Sunucunun IP adresini** yazmanız gerekmektedir.
+
+![image](https://github.com/ugurcomptech/Ubuntu-Cyberpanel/assets/133202238/0fe98c30-f53f-4796-b4e8-4478273bec33)
+
+
+Diğer ayarlar butonuna tıklayıp **Giden Sunucu** sekmesine geliyoruz ve buradaki kutucuğu işaretliyoruz. Eğer bu kutucuk işaretlenmez ise aşağıdaki gibi bir hata alabilirsiniz.
+
+```
+May 18 21:49:21 localhost postfix/smtps/smtpd[937222]: NOQUEUE: reject: RCPT from unknown[88.17.47.99]: 554 5.7.1 <ugur@ugurcomptech.com.tr>: Recipient address rejected: Access denied; from=<ugur@ugurcomptech.com.tr> to=<ugur@ugurcomptech.com.tr> proto=ESMTP helo=<userpc>
+```
+
+
+![image](https://github.com/ugurcomptech/Ubuntu-Cyberpanel/assets/133202238/f5b8eae4-9f96-4e83-83d8-d43f4895b528)
 
 
 
+Daha sonra gelişmiş sekmesine tıklayıp buradaki port numaralarını belirtiyoruz. Aşağıda POP ve IMAP protokolünün bağlantı numaraları belirtilmiştir. 
+
+### POP (Post Office Protocol)
+
+- **POP3 (SSL'siz)**
+  - **Port:** 110
+
+- **POP3S (SSL/TLS ile)**
+  - **Port:** 995
+
+### IMAP (Internet Message Access Protocol)
+
+- **IMAP (SSL'siz)**
+  - **Port:** 143
+
+- **IMAPS (SSL/TLS ile)**
+  - **Port:** 993
 
 
+![image](https://github.com/ugurcomptech/Ubuntu-Cyberpanel/assets/133202238/72876ee1-c104-4b1b-b77c-ef16e60f0345)
+
+
+İlgili ayarları kaydedip çıkıyoruz. Sonraki butonuna bastığında başarılı bir şekilde kurulduğunu görüyoruz.
+
+
+
+![image](https://github.com/ugurcomptech/Ubuntu-Cyberpanel/assets/133202238/42456fcd-5b3e-4895-b660-e19f14580712)
 
 
 
