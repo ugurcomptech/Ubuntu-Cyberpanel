@@ -231,7 +231,7 @@ Bu hatanın çözümü, PTR (Reverse DNS) kaydının oluşturulması veya doğru
 
 
 
-## Mail Adresi Outlook'a Nasıl Kurulu?
+## Mail Adresi Outlook'a Nasıl Kurulur?
 
 Kurulumları herhangi bir mail uygulamasında POP veya IMAP şeklinde test edebilirsiniz. Ben SSL portlarını kullanarak bir kurulum yapacağım.
 
