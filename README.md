@@ -275,18 +275,15 @@ Daha sonra gelişmiş sekmesine tıklayıp buradaki port numaralarını belirtiy
 
 İlgili ayarları kaydedip çıkıyoruz. Sonraki butonuna bastığında başarılı bir şekilde kurulduğunu görüyoruz.
 
-
-## Gmail'e Giden Mailler Spama Düşmesi veya Hiç Ulaşmaması
-
-Bu sorun bir kaç farklı nedenden kaynaklanabilmektedir. Örneğin DNS bölgenizde SPF kaydı yok ise Gmail gibi bazı büyük firmalara mail gönderirken mailiniz hiç ulaşmadan reddedilecektir. Bazı büyük firmalar DKIM, DMARC gibi kayıtlarıda zorunlu tutmaktadır. Bunun yanı sıra gönderi yapmış olduğunuz mail serverınız için bir rDNS kaydı da eklenmesi iyi olabilir. SpamAssasin de yapılan incelemede rDNS kaydı da önem taşımaktadır. Ayrıca Gmail'e ait olan `Postmaster Tools` sisteminden de IP adresinizi eklemeniz yararınıza olacaktır. [Postmaster Tools'a ulaşmak için tıklayınız.](https://www.gmail.com/postmaster/)
-
-
-
-
-
 ![image](https://github.com/ugurcomptech/Ubuntu-Cyberpanel/assets/133202238/42456fcd-5b3e-4895-b660-e19f14580712)
 
 
+
+
+
+## Gmail'e Giden Mailler Spama Düşmesi veya Hiç Ulaşmaması
+
+Bu sorun bir kaç farklı nedenden kaynaklanabilmektedir. Örneğin DNS bölgenizde SPF kaydı yok ise Gmail gibi bazı büyük firmalara mail gönderirken mailiniz hiç ulaşmadan reddedilecektir. Bazı büyük firmalar DKIM, DMARC gibi kayıtlarıda zorunlu tutmaktadır. Bunun yanı sıra gönderi yapmış olduğunuz mail serverınız için bir rDNS kaydı da eklenmesi iyi olabilir. SpamAssasin de yapılan incelemede rDNS kaydı da önem taşımaktadır. Ayrıca Gmail'e ait olan `Postmaster Tools` sisteminden de IP adresinizi eklemeniz yararınıza olacaktır. [Postmaster Tools'a ulaşmak için tıklayınız.](https://www.gmail.com/postmaster/) Ek olarak IP adresiniz blackliste girmiş olabilir. IP adresinizin blackliste olup olmadığını internet üzerindeki tools'lar yardımı ile kontrol edebilirsiniz. Eğer bu önerilenleri yapmanıza rağmen sorun devam ediyor ise tarafınıza dönen hataları daha detaylı kontrol etmek gerekebilir.
 
 
 
